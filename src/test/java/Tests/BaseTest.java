@@ -15,7 +15,6 @@ import org.testng.annotations.BeforeTest;
 public class BaseTest {
 
      WebDriver driver;
-
      String browser = BrowserUtils.getBrowserExternal("automationBrowser");
      String baseUrl = GenericUtils.createBaseUrl("src\\test\\java\\Resources\\config.properties");
 

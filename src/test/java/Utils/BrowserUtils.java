@@ -59,7 +59,7 @@ public class BrowserUtils {
                return System.getenv(propertyName).toLowerCase();
           }
           else {
-               return "CHROME";
+               return "EDGE";
           }
      }
 }
