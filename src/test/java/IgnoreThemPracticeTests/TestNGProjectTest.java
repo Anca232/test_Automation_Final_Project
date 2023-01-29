@@ -1,3 +1,5 @@
+package IgnoreThemPracticeTests;
+
 import org.testng.annotations.Test;
 
 @Test

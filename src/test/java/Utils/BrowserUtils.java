@@ -6,17 +6,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.util.Map;
+
 public class BrowserUtils {
 
-     public static WebDriver getBrowser(String browser){
+
+     public static WebDriver getBrowser(String browser){  //browser factory classic method
           switch (browser.toLowerCase()) {
                case ("chrome") -> {
                     WebDriverManager.chromedriver().setup();
-
                     return new ChromeDriver();
                }
                case ("firefox") -> {
-
                     WebDriverManager.firefoxdriver().setup();
                     return new FirefoxDriver();
                }
@@ -31,5 +32,34 @@ public class BrowserUtils {
           }
      }
 
+     public static Browser getBrowser(BrowserTypes browserType) { //second method browser factory
+          switch(browserType.toString()) {
+               case ("CHROME") : {
+                    return new ChromeBrowser();
+               }
+               case("FIREFOX") : {
+                    return new FirefoxBrowser();
+               }
+               case("EDGE") : {
+                    return new EdgeBrowser();
+               }
+               default : {
+                    System.out.println("Browser not supported");
+                    return null;
+               }
+          }
+     }
 
+     public static String getBrowserExternal(String propertyName) { //get browser from env variables (exterior)
+          // Take all the system environment names and values
+          Map<String, String> env = System.getenv();
+          // Check if the property is set
+          if (env.containsKey(propertyName)) {
+               System.out.println("Running from ENV variable with browser: " + System.getenv(propertyName));
+               return System.getenv(propertyName).toLowerCase();
+          }
+          else {
+               return "CHROME";
+          }
+     }
 }

@@ -8,7 +8,7 @@
             </run>
         </groups>
         <classes>
-            <class name="TestNGProjectTest"/>
+            <class name="IgnoreThemPracticeTests.TestNGProjectTest"/>
         </classes>
     </test>
     <test name="Regression Test">
@@ -18,7 +18,7 @@
             </run>
         </groups>
         <classes>
-            <class name="TestNGProjectTest"/>
+            <class name="IgnoreThemPracticeTests.TestNGProjectTest"/>
         </classes>
     </test>
 

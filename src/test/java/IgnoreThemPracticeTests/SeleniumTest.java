@@ -1,6 +1,5 @@
 package IgnoreThemPracticeTests;
 
-import Tests.BaseTest;
 import Utils.SeleniumUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -25,21 +24,21 @@ public class SeleniumTest extends BaseTest {
      WebDriver driver;
      String browser = "chrome";
 
-     @BeforeTest
-     public void beforeTest() {
-          if (browser.toLowerCase().equals("chrome")) {
-               WebDriverManager.chromedriver().setup();
-               driver = new ChromeDriver();
-          }
-          if (browser.toLowerCase().equals("firefox")) {
-               WebDriverManager.firefoxdriver().setup();
-               driver = new FirefoxDriver();
-          }
-          if (browser.toLowerCase().equals("edge")) {
-               WebDriverManager.edgedriver().setup();
-               driver = new EdgeDriver();
-          }
-     }
+//     @BeforeTest
+//     public void beforeTest() {
+//          if (browser.toLowerCase().equals("chrome")) {
+//               WebDriverManager.chromedriver().setup();
+//               driver = new ChromeDriver();
+//          }
+//          if (browser.toLowerCase().equals("firefox")) {
+//               WebDriverManager.firefoxdriver().setup();
+//               driver = new FirefoxDriver();
+//          }
+//          if (browser.toLowerCase().equals("edge")) {
+//               WebDriverManager.edgedriver().setup();
+//               driver = new EdgeDriver();
+//          }
+//     }
 
      @Test
      public void mySecondSeleniumTest(){
@@ -100,8 +99,8 @@ public class SeleniumTest extends BaseTest {
 ////          WebElement errorMsg = driver.findElement(By.id("email-error"));
 //     }
 
-     @AfterTest
-     public void afterTest(){
-          driver.quit();
-     }
+//     @AfterTest
+//     public void afterTest(){
+//          driver.quit();
+//     }
 }

@@ -3,11 +3,11 @@ package Utils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 
-public class ChromeDriver extends Browser {
+public class ChromeBrowser extends Browser {
 
-     public void ChromeBrowser() {
+     public ChromeBrowser() {
           WebDriverManager.chromedriver().setup();
-          this.driver = (WebDriver) new ChromeDriver();
+          this.driver = (WebDriver) new ChromeBrowser();
      }
 
 

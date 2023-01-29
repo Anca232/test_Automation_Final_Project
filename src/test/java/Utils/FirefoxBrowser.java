@@ -3,10 +3,10 @@ package Utils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 
-public class FirefoxDriver extends Browser {
+public class FirefoxBrowser extends Browser {
 
-     public void FirefoxBrowser() {
+     public FirefoxBrowser() {
           WebDriverManager.firefoxdriver().setup();
-          this.driver = (WebDriver) new FirefoxDriver();
+          this.driver = (WebDriver) new FirefoxBrowser();
      }
 }

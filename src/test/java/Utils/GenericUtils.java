@@ -1,5 +1,7 @@
 package Utils;
 
+import org.openqa.selenium.InvalidArgumentException;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -27,7 +29,7 @@ public class GenericUtils {
                Properties appProps = new Properties();
                appProps.load(Files.newInputStream(Paths.get(configFile)));
                urlBase = appProps.getProperty("protocol") + "://" + appProps.getProperty("hostname") + ":" + appProps.getProperty("port");
-          } catch (IOException ex) {
+          } catch (InvalidArgumentException | IOException ex) {
                System.out.println(ex);
           }
           return urlBase;
