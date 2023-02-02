@@ -1,7 +1,6 @@
 package Pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -9,7 +8,7 @@ public class MyAccountPage extends BasePage {
      private String myAccountSelector = "//*[@id=\"maincontent\"]/div[3]/div[2]/div[1]/h1/span"; //xpath
      private String infoAccountSelector = "//*[@id=\"maincontent\"]/div[3]/div[2]/div[3]/div[1]/strong";
      private String infoContactSelector = "//*[@id=\"maincontent\"]/div[3]/div[2]/div[3]/div[2]/div[1]/strong/span";
-     private String changePasswordSelector = "#maincontent > div.columns > div.column.main > div.block.block-dashboard-info > div.block-content > div.box.box-information > div.box-actions > a.action.change-password"; //css
+     private String changePasswordSelector = "//*[@id=\"maincontent\"]/div[3]/div[2]/div[3]/div[2]/div[1]/div[2]/a[2]"; //xpath
      private String addressesSelector = "//*[@id=\"maincontent\"]/div[3]/div[2]/div[4]/div[1]/strong";
      private String addressesAdminSelector = "#maincontent > div.columns > div.column.main > div.block.block-dashboard-addresses > div.block-title > a"; //css
      private String invoiceAddressSelector = "//*[@id=\"maincontent\"]/div[3]/div[2]/div[4]/div[2]/div[1]/strong/span";
@@ -27,7 +26,6 @@ public class MyAccountPage extends BasePage {
           Assert.assertEquals(driver.findElement(By.xpath(myAccountSelector)).getText(), "Contul meu");
           Assert.assertEquals(driver.findElement(By.xpath(infoAccountSelector)).getText(), "Informatii cont");
           Assert.assertEquals(driver.findElement(By.xpath(infoContactSelector)).getText(), "Informatii contact");
-          Assert.assertEquals(driver.findElement(By.cssSelector(changePasswordSelector)).getText(), "Schimba parola");
           Assert.assertEquals(driver.findElement(By.xpath(addressesSelector)).getText(), "Adrese");
           Assert.assertEquals(driver.findElement(By.cssSelector(addressesAdminSelector)).getText(), "Administreaza adrese");
           Assert.assertEquals(driver.findElement(By.xpath(invoiceAddressSelector)).getText(), "Adresa de facturare implicita");
@@ -36,6 +34,10 @@ public class MyAccountPage extends BasePage {
           Assert.assertEquals(driver.findElement(By.cssSelector(editNewsletterSelector)).getText(), "Editeaza");
           Assert.assertEquals(driver.findElement(By.xpath(deliveryAddressSelector)).getText(), "Adresa de livrare");
           Assert.assertEquals(driver.findElement(By.cssSelector(editDeliveryAddressSelector)).getText(), "Editeaza adresa");
+     }
+
+     public void changePass(){
+          driver.findElement(By.xpath(changePasswordSelector)).click();
      }
 }
 

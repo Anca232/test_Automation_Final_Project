@@ -11,7 +11,7 @@ import java.util.Random;
 public class GenericUtils {
 
      //when register new account
-     public static String createRandomString(int charCount){
+     public static String createRandomString(int charCount) {
           StringBuilder sb = new StringBuilder();
           String charSet = "abcdefghijklmonopqrstvwxyz";
           charSet += charSet.toUpperCase();
@@ -33,5 +33,55 @@ public class GenericUtils {
                System.out.println(ex);
           }
           return urlBase;
+     }
+
+     public static String getBrowserConfig(String configFile) {
+          return ConfigUtils.getGenericValue(configFile, "browser", "CHROME");
+     }
+
+     public static Boolean getHeadlessMode(String configFile) {
+          return Boolean.parseBoolean(ConfigUtils.getGenericValue(configFile, "headlessMode", "false"));
+     }
+
+     public static boolean isProxyEnabled(String configFile) {
+          return Boolean.parseBoolean(ConfigUtils.getGenericValue(configFile, "proxyEnabled", "false"));
+     }
+
+     public static Boolean getInsecureCertOptions(String configFile) {
+          return Boolean.parseBoolean(ConfigUtils.getGenericValue(configFile, "acceptInsecureCerts", "false"));
+     }
+     public static String getDBHostname(String configFile){
+          return ConfigUtils.getGenericValue(configFile, "dbHostname", "");
+     }
+
+     public static String getDBUser(String configFile){
+          return ConfigUtils.getGenericValue(configFile, "dbUser", "");
+     }
+
+     public static String getDBPassword(String configFile){
+          return ConfigUtils.getGenericValue(configFile, "dbPassword", "");
+     }
+
+     public static String getDBPort(String configFile){
+          return ConfigUtils.getGenericValue(configFile, "dbPort", "3306");
+     }
+
+     public static String getDBSchema(String configFile){
+          return ConfigUtils.getGenericValue(configFile, "dbSchema", "");
+     }
+
+     public static String getapiVersion(String configFile){
+          return ConfigUtils.getGenericValue(configFile, "apiVersion", "");
+     }
+
+     public static boolean isDownloadDirectoryEnabled(String configFile) {
+          return Boolean.parseBoolean(ConfigUtils.getGenericValue(configFile, "downloadDirectoryEnabled", "false"));
+     }
+
+     public static boolean startMaximized(String configFile) {
+          return Boolean.parseBoolean(ConfigUtils.getGenericValue(configFile, "startMaximized", "false"));
+     }
+     public static boolean enableExtension(String configFile) {
+          return Boolean.parseBoolean(ConfigUtils.getGenericValue(configFile, "enableExtension", "false"));
      }
 }

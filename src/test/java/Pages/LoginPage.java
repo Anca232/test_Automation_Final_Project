@@ -14,6 +14,7 @@ public class LoginPage extends BasePage {
      private String forgetPasswordSelector = "#login-form > fieldset > div.actions-toolbar > div.secondary > a > span"; //css
      private String submitButtonSelector = "#send2 > span"; //css
 
+
      public LoginPage(WebDriver driver) {
           super(driver);
      }
@@ -35,4 +36,5 @@ public class LoginPage extends BasePage {
           passwordInput.sendKeys(password);
           submitButtonInput.submit();
      }
+
 }

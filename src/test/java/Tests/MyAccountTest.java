@@ -11,10 +11,8 @@ public class MyAccountTest extends BaseTest {
           driver.get(baseUrl + "/customer/account/");
           LoginPage lp = new LoginPage(driver);
           lp.verifyPage();
-          lp.login("testing@gmail.com", "Testing1234");
+          lp.login("maria_s@gmail.com", "Stravache123");
           MyAccountPage map = new MyAccountPage(driver);
-          map.verifyPage();
-
+          map.changePass();
      }
-
 }
