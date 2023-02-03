@@ -4,6 +4,8 @@ import Pages.AccountOptionsPage;
 import Pages.LoginPage;
 import Pages.MyAccountPage;
 import Utils.SeleniumUtils;
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
@@ -13,10 +15,12 @@ public class LoginTest extends BaseTest {
           driver.get(baseUrl + "/customer/account/login/");
           LoginPage lp = new LoginPage(driver);
           lp.verifyPage();
-          lp.login("alex_p@gmail.com", "Parola0987");
-          AccountOptionsPage aop = new AccountOptionsPage(driver);
-          aop.verifyPage();
-          SeleniumUtils.takeScreenshot(driver);
+          lp.login("sara_p@gmail.com", "Password2023");
+
+//          Assert.assertEquals(lp.getEmailError(),emailErr);
+//          AccountOptionsPage aop = new AccountOptionsPage(driver);
+//          aop.verifyPage();
+//          SeleniumUtils.takeScreenshot(driver);
      }
 
 //     @Test

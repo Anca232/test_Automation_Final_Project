@@ -11,4 +11,7 @@ public class BasePage {
           this.driver = driver;
           this.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
      }
+
+     public BasePage() {
+     }
 }
