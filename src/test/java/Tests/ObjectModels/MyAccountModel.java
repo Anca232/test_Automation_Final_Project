@@ -1,7 +1,7 @@
 package Tests.ObjectModels;
 
 
-public class AccountModel {
+public class MyAccountModel {
      private String username;
      private String password;
 

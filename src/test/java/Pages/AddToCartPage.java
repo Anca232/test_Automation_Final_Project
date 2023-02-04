@@ -1,8 +1,10 @@
 package Pages;
 
+import Utils.SeleniumUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 public class AddToCartPage extends BasePage {
@@ -14,6 +16,8 @@ public class AddToCartPage extends BasePage {
      private String producerLabel = "#narrow-by-list > div:nth-child(3) > div > dt";
      private String productOrderingSelector = "#amasty-shopby-product-list > div:nth-child(1) > div.toolbar-sorter.sorter > label";
      private String dropDownSorterSelector = "//*[@id=\"sorter\"]";
+     private String addToCartButtonSelector = "//*[@id=\"product-addtocart-button\"]";
+     private String firstProductInTheListSelector = "//*[@id=\"amasty-shopby-product-list\"]/div[3]/ol/li[1]/div/a/span/span/picture/img";
 
      public AddToCartPage(WebDriver driver) {
           super(driver);
@@ -30,6 +34,13 @@ public class AddToCartPage extends BasePage {
      public void setDropDownSorterSelector(){
           WebElement orderProductsDropdown = driver.findElement(By.xpath(dropDownSorterSelector));
           orderProductsDropdown.click();
-
+     }
+     public void clickOnTheProduct(){
+          WebElement hoverOption = driver.findElement(By.xpath(firstProductInTheListSelector));
+          hoverOption.click();
+     }
+     public void addToCartProduct(){
+          WebElement addToCartButton = driver.findElement(By.xpath(addToCartButtonSelector));
+          addToCartButton.click();
      }
 }

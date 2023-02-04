@@ -3,16 +3,16 @@ package Tests.ObjectModels;
 
 
 public class LoginModel {
-     private AccountModel account;
+     private MyAccountModel account;
 
      public LoginModel(){
      }
 
-     public AccountModel getAccount() {
+     public MyAccountModel getAccount() {
           return account;
      }
 
-     public void setAccount(AccountModel account) {
+     public void setAccount(MyAccountModel account) {
           this.account = account;
      }
 

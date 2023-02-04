@@ -16,7 +16,7 @@
         <seleniumVersion>3.141.59</seleniumVersion>
         <lombokVersion>1.18.24</lombokVersion>
         <junitVersion>4.13.2</junitVersion>
-        <testNgVersion>7.5</testNgVersion>
+        <testNgVersion>7.7.1</testNgVersion>
         <jacksonDatabindVersion>2.14.2</jacksonDatabindVersion>
     </properties>
 

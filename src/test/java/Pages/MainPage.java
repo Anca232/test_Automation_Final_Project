@@ -20,6 +20,7 @@ public class MainPage extends BasePage {
      private String searchButtonSelector = "//*[@id=\"algolia-glass\"]"; //xpath
      private String loginButtonSelector = "//*[@id=\"html-body\"]/div[3]/header/div[2]/ul/div/ul/li[1]/a"; //xpath
      private String alertButtonSelector = "#html-body > div.amgdprcookie-bar-template > div > div > p"; //css
+     private String shoppingBagLabel = "#minicart-content-wrapper > div.block-title > strong > span.text > span";
 
      public MainPage(WebDriver driver) {
           super(driver);
@@ -39,6 +40,7 @@ public class MainPage extends BasePage {
 
      public void goToShoppingCartPage(){
           driver.findElement(By.cssSelector(shoppingCartSelector)).click();
+          Assert.assertEquals(driver.findElement(By.cssSelector(shoppingCartSelector)).getText(), "COSUL DE CUMPARATURI");
      }
 
      public void clickOnSearchButton(){
@@ -52,10 +54,6 @@ public class MainPage extends BasePage {
           Actions actions = new Actions(driver);
           actions.moveToElement(hoverOption).build().perform();
           driver.findElement(By.xpath(loginButtonSelector)).click();
-     }
-     public void searchProducts(){
-          WebElement searchProduct = driver.findElement(By.cssSelector(mainPageLogo));
-
      }
 
 //     public void gotToInterceptor(){
