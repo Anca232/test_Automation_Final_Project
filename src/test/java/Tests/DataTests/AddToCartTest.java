@@ -1,4 +1,4 @@
-package Tests;
+package Tests.DataTests;
 
 import Pages.AddToCartPage;
 import org.testng.annotations.Test;

@@ -1,14 +1,14 @@
-package Tests;
+package Tests.DataTests;
 
-import Pages.LoginPage;
 import Pages.MainPage;
+import Tests.DataTests.BaseTest;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class MainPageTest extends BaseTest {
 
-     @Test
+     @Test(groups = {"Regression"})
      public void clickOnSearchBarTest(){
           driver.get(baseUrl);
           MainPage mp = new MainPage(driver);
@@ -25,7 +25,7 @@ public class MainPageTest extends BaseTest {
           Assert.assertEquals(driver.findElement(By.cssSelector("#minicart-content-wrapper > div.block-title > strong > span.text > span")).getText(), "COSUL DE CUMPARATURI");
      }
 
-     @Test
+     @Test(groups = {"Smoke"})
      public void clickOnSignInTest(){
           driver.get(baseUrl);
           MainPage lp = new MainPage(driver);

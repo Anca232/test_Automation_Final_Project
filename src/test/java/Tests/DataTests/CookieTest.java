@@ -1,5 +1,6 @@
-package Tests;
+package Tests.DataTests;
 
+import Tests.DataTests.BaseTest;
 import Utils.SeleniumUtils;
 import org.openqa.selenium.Cookie;
 import org.testng.annotations.Test;

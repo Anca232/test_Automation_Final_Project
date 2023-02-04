@@ -27,6 +27,11 @@ public class BaseTest {
                WebDriverManager.edgedriver().setup();
                driver = new EdgeDriver();
           }
+
+          //          System.out.println(baseUrl);
+//          driver = BrowserUtils.getBrowser(browser, ConstantUtils.CONFIG_FILE);
+//     //     driver = BrowserUtils.getBrowser(BrowserTypes.CHROME).getDriver();
+//     }
      }
 
      @AfterTest

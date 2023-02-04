@@ -1,5 +1,6 @@
 package Pages;
 
+import Tests.ObjectModels.AccountModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,10 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import javax.xml.bind.annotation.XmlElement;
+
 public class LoginPage extends BasePage {
 
      WebDriver driver;
      WebDriverWait wait;
+     private AccountModel account;
 
      private String titlePageSelector = "#maincontent > div.columns > div > div.sociallogin-wrapper.block-customer-login > div > div.block-title > h3";
      private String existingClientSelector = "#block-customer-login-heading"; //css
@@ -42,7 +46,22 @@ public class LoginPage extends BasePage {
           emailInput.sendKeys(email);
           passwordInput.clear();
           passwordInput.sendKeys(password);
-//          submitButtonInput.submit();
+          submitButtonInput.submit();
+     }
+
+     public AccountModel getAccount() {
+          return account;
+     }
+     @XmlElement
+     public void setAccount(AccountModel account) {
+          this.account = account;
+     }
+
+     @Override
+     public String toString() {
+          return "LoginModel{" +
+                  "account=" + account +
+                  '}';
      }
 
 //     public void clickOnAlertButton(){

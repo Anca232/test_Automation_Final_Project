@@ -1,7 +1,8 @@
-package Tests;
+package Tests.DataTests;
 
 import Pages.LoginPage;
 import Pages.MyAccountPage;
+import Tests.DataTests.BaseTest;
 import org.testng.annotations.Test;
 
 public class MyAccountTest extends BaseTest {

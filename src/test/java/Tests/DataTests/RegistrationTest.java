@@ -1,6 +1,7 @@
-package Tests;
+package Tests.DataTests;
 
 import Pages.RegistrationPage;
+import Tests.DataTests.BaseTest;
 import org.testng.annotations.Test;
 
 public class RegistrationTest extends BaseTest {
@@ -10,6 +11,6 @@ public class RegistrationTest extends BaseTest {
           driver.get(baseUrl + "/customer/account/create/");
           RegistrationPage lp =new RegistrationPage(driver);
           lp.verifyRegistrationPage();
-          lp.registration("Mary", "Winch", "marywinch23@yahoo.com", "Password123", "Password123");
+          lp.registration("MaryM", "Poppy", "marymPoppy@yahoo.com", "Password123", "Password123");
      }
 }
