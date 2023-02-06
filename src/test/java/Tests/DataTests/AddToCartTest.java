@@ -1,6 +1,7 @@
 package Tests.DataTests;
 
 import Pages.AddToCartPage;
+import Pages.AddToCartProductPage;
 import org.testng.annotations.Test;
 
 public class AddToCartTest extends BaseTest {
@@ -18,6 +19,13 @@ public class AddToCartTest extends BaseTest {
           AddToCartPage acp = new AddToCartPage(driver);
           acp.setDropDownSorterSelector();
      }
+
+     @Test
+     public void numberOfProductOnThePageTest(){
+          driver.get(baseUrl + "/gift-ideas.html/");
+          AddToCartPage acp = new AddToCartPage(driver);
+          acp.clickOnTheNumberProductDropDown();
+     }
      @Test(priority = 1)
      public void clickOnProductTest(){
           driver.get(baseUrl + "/gift-ideas.html/");
@@ -26,8 +34,8 @@ public class AddToCartTest extends BaseTest {
      }
      @Test
      public void addToCartTest(){
-          clickOnProductTest();
-          AddToCartPage atc = new AddToCartPage(driver);
-          atc.addToCartProduct();
+          driver.get(baseUrl + "/ceas-stihl-timbersports-negru.html/");
+          AddToCartProductPage atc = new AddToCartProductPage(driver);
+          atc.verifyPage();
      }
 }

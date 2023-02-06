@@ -1,6 +1,7 @@
 package Tests.DataTests;
 
 import Pages.RegistrationPage;
+import Utils.GenericUtils;
 import org.testng.annotations.Test;
 
 public class RegistrationTest extends BaseTest {
@@ -10,6 +11,12 @@ public class RegistrationTest extends BaseTest {
           driver.get(baseUrl + "/customer/account/create/");
           RegistrationPage lp =new RegistrationPage(driver);
           lp.verifyRegistrationPage();
-          lp.registration("MaryM", "Poppy", "marymPoppy@yahoo.com", "Password123", "Password123");
+//          lp.registration(GenericUtils.createRandomString(driver, 10));
+          //lp.registration("MaryM", "Poppy", "marymaePoppy@yahoo.com", "Password321", "Password123");
+          lp.registration(GenericUtils.createRandomString(10),
+                  GenericUtils.createRandomString(10),
+                  GenericUtils.createRandomString(10),
+                  GenericUtils.createRandomString(10),
+                  GenericUtils.createRandomString(10));
      }
 }

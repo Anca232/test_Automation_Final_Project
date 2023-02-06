@@ -30,5 +30,4 @@ public class AccountOptionsPage extends BasePage {
           Assert.assertEquals(driver.findElement(By.cssSelector(mySubscriptionSelector)).getText(), "Abonari la newsletter");
           Assert.assertEquals(driver.findElement(By.cssSelector(mySocialAccountsSelector)).getText(), "Conturi sociale asociate");
      }
-
 }

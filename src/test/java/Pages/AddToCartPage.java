@@ -16,7 +16,8 @@ public class AddToCartPage extends BasePage {
      private String producerLabel = "#narrow-by-list > div:nth-child(3) > div > dt";
      private String productOrderingSelector = "#amasty-shopby-product-list > div:nth-child(1) > div.toolbar-sorter.sorter > label";
      private String dropDownSorterSelector = "//*[@id=\"sorter\"]";
-     private String addToCartButtonSelector = "//*[@id=\"product-addtocart-button\"]";
+     private String dropDownNumberOfProductOnThePageTextSelector = "//*[@id=\"amasty-shopby-product-list\"]/div[1]/div[3]/label/span"; //path
+     private String dropDownNumberOfProductOnThePageSelector = "//*[@id=\"limiter\"]";
      private String firstProductInTheListSelector = "//*[@id=\"amasty-shopby-product-list\"]/div[3]/ol/li[1]/div/a/span/span/picture/img";
 
      public AddToCartPage(WebDriver driver) {
@@ -29,6 +30,7 @@ public class AddToCartPage extends BasePage {
           Assert.assertEquals(driver.findElement(By.cssSelector(priceLabel)).getText(),"PRET");
           Assert.assertEquals(driver.findElement(By.cssSelector(producerLabel)).getText(), "PRODUCATOR");
           Assert.assertEquals(driver.findElement(By.cssSelector(productOrderingSelector)).getText(), "Ordoneaza");
+          Assert.assertEquals(driver.findElement(By.xpath(dropDownNumberOfProductOnThePageTextSelector)).getText(), "Arata");
      }
 
      public void setDropDownSorterSelector(){
@@ -39,8 +41,8 @@ public class AddToCartPage extends BasePage {
           WebElement hoverOption = driver.findElement(By.xpath(firstProductInTheListSelector));
           hoverOption.click();
      }
-     public void addToCartProduct(){
-          WebElement addToCartButton = driver.findElement(By.xpath(addToCartButtonSelector));
-          addToCartButton.click();
+     public void clickOnTheNumberProductDropDown(){
+          WebElement noOfProduct = driver.findElement(By.xpath(dropDownNumberOfProductOnThePageSelector));
      }
+
 }
