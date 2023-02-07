@@ -1,10 +1,10 @@
 package Tests.DataTests;
 
 import Pages.MainPage;
-import org.openqa.selenium.By;
-import org.testng.Assert;
-import org.testng.annotations.Parameters;
+import Utils.ExtentTestManager;
 import org.testng.annotations.Test;
+
+import java.lang.reflect.Method;
 
 public class MainPageTest extends BaseTest {
 
@@ -17,15 +17,16 @@ public class MainPageTest extends BaseTest {
           mp.clickOnSearchButton();
      }
 
-     @Test(groups = {"Smoke"})
+     @Test(groups = {"Regression"})
      public void clickOnShoppingCartTest(String param1, String param2){
           driver.get(baseUrl);
           MainPage mp = new MainPage(driver);
           mp.goToShoppingCartPage();
      }
 
-     @Test(groups = {"Regression"})
-     public void clickOnSignInTest(){
+     @Test(groups = {"Smoke"})
+     public void clickOnSignInTest(Method method){
+          ExtentTestManager.startTest(method.getName(), "");
           driver.get(baseUrl);
           MainPage lp = new MainPage(driver);
           lp.clickOnSignIn();

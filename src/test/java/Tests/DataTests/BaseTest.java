@@ -3,6 +3,7 @@ package Tests.DataTests;
 import Utils.BrowserUtils;
 import Utils.ConstantUtils;
 import Utils.GenericUtils;
+import com.aventstack.extentreports.ExtentTest;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
@@ -21,8 +22,9 @@ public class BaseTest {
      String browser = GenericUtils.getBrowserConfig(usedConfig);
      String baseUrl = GenericUtils.createBaseUrl(ConstantUtils.CONFIG_FILE);
 
+     ExtentTest test;
 //     Base64 base64 = new Base64();
-//     ExtentTest test;
+
 
      @BeforeTest(alwaysRun = true)
      public void beforeTest() {
@@ -38,6 +40,7 @@ public class BaseTest {
      @AfterTest(alwaysRun = true)
      public void afterTest() {
           driver.quit();
+
      }
      @AfterClass
      public void quitDriver(){

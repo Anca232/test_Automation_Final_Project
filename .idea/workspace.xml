@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce7c32ec-aa8f-4596-8514-88f6a9e66d3a" name="Changes" comment="update project 1.3">
+    <list default="true" id="ce7c32ec-aa8f-4596-8514-88f6a9e66d3a" name="Changes" comment="update project 1.4">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/AllureTestListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/ExtentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/ExtentTestListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/ExtentTestManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainPageSmokeRunSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mainPageSmokeRunSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/CookieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/CookieTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/MainPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/BrowserUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utils/ConstantUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/ConstantUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/GenericUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/GenericUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utils/SeleniumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/SeleniumUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SmokeSuite">
+  <component name="RunManager" selected="TestNG.C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/mainPageSmokeRunSuite.xml">
     <configuration name="TestProj" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.finalProjectTest.TestProject" />
       <module name="test_Automation_Final_Project" />
@@ -339,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675725177262</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update project 1.4">
+      <created>1675806823528</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675806823528</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -363,7 +373,8 @@
     <MESSAGE value="update project" />
     <MESSAGE value="update project 1.2" />
     <MESSAGE value="update project 1.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="update project 1.3" />
+    <MESSAGE value="update project 1.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="update project 1.4" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

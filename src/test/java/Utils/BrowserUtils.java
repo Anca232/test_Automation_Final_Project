@@ -18,7 +18,6 @@ import java.util.concurrent.TimeUnit;
 
 public class BrowserUtils {
 
-
      public static WebDriver getBrowser(String browser, String configFile){  //browser factory classic method
           switch (browser.toLowerCase()) {
                case ("chrome") -> {

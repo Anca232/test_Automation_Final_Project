@@ -19,6 +19,7 @@
         <lombokVersion>1.18.24</lombokVersion>
         <junitVersion>4.13.2</junitVersion>
         <testNgVersion>7.7.1</testNgVersion>
+        <extentVersion>5.0.9</extentVersion>
         <jacksonDatabindVersion>2.14.2</jacksonDatabindVersion>
     </properties>
 
@@ -81,6 +82,7 @@
             <artifactId>jackson-databind</artifactId>
             <version>${jacksonDatabindVersion}</version>
         </dependency>
+        <!--        base 64 encode-->
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
@@ -115,6 +117,13 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.22</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extentVersion}</version>
+        </dependency>
+
     </dependencies>
     <build>
         <pluginManagement>
