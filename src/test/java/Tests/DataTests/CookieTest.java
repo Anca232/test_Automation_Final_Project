@@ -12,7 +12,7 @@ public class CookieTest extends BaseTest {
      public void cookieTest(){
           driver.get(baseUrl);
           SeleniumUtils.printCookies(driver);
-//          SeleniumUtils.takeScreenshot(driver);
+          SeleniumUtils.takeScreenshot(driver);
      }
 
      @Test
@@ -29,5 +29,8 @@ public class CookieTest extends BaseTest {
           driver.manage().deleteCookieNamed("new_cookie");
           System.out.println(driver.manage().getCookies().size());
           System.out.println("Is cookie present? " + SeleniumUtils.checkIfCookieExistsByName(driver, "new_cookie"));
+
+          driver.manage().deleteAllCookies();
      }
+
 }

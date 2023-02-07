@@ -10,7 +10,6 @@ import java.util.Random;
 
 public class GenericUtils {
 
-     //when register new account
      public static String createRandomString(int charCount) {
           StringBuilder sb = new StringBuilder();
           String charSet = "abcdefghijklmonopqrstvwxyz";

@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce7c32ec-aa8f-4596-8514-88f6a9e66d3a" name="Changes" comment="update project 1.2">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/AddToCartProductPage.java" afterDir="false" />
+    <list default="true" id="ce7c32ec-aa8f-4596-8514-88f6a9e66d3a" name="Changes" comment="update project 1.3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addToCartRegressionRunSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addToCartRegressionRunSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AccountOptionsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AccountOptionsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AddToCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AddToCartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/Data/testdata.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/Data/testdata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/Data/testdata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/Data/testdata.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/AddToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/AddToCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/CookieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/CookieTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/MainPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utils/ConstantUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/ConstantUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/GenericUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/GenericUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/SeleniumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/SeleniumUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,17 +50,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.21034482&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowRun.ShowToolbar": "false",
+    "last_opened_file_path": "C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/src/test/java/Tests/DataTests",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.21034482"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\UltraBook\IdeaProjects\test_Automation_Final_Project\src\test" />
@@ -74,7 +70,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddToCartTest.addToCartTest">
+  <component name="RunManager" selected="TestNG.SmokeSuite">
     <configuration name="TestProj" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.finalProjectTest.TestProject" />
       <module name="test_Automation_Final_Project" />
@@ -106,7 +102,26 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="AddToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/mainPageSmokeRunSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test_Automation_Final_Project" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/mainPageSmokeRunSuite.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CookieTest.addCookieTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_Automation_Final_Project" />
       <extension name="coverage">
         <pattern>
@@ -115,81 +130,117 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests.DataTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.AddToCartTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.CookieTest" />
+      <option name="METHOD_NAME" value="addCookieTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CookieTest.cookieTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test_Automation_Final_Project" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.DataTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Tests.DataTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.CookieTest" />
+      <option name="METHOD_NAME" value="cookieTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.getAccountErrorsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test_Automation_Final_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.DataTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.DataTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.LoginTest" />
+      <option name="METHOD_NAME" value="getAccountErrorsTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainPageTest.clickOnShoppingCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test_Automation_Final_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.DataTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.DataTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.MainPageTest" />
+      <option name="METHOD_NAME" value="clickOnShoppingCartTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegressionSuite" type="TestNG">
+      <module name="test_Automation_Final_Project" />
+      <shortenClasspath name="NONE" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="Regression" />
+      <option name="TEST_OBJECT" value="GROUP" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmokeSuite" type="TestNG">
+      <module name="test_Automation_Final_Project" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Tests.DataTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.MainPageTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddToCartTest.addToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test_Automation_Final_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.DataTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.DataTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.AddToCartTest" />
-      <option name="METHOD_NAME" value="addToCartTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddToCartTest.clickOnProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test_Automation_Final_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.DataTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.DataTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.AddToCartTest" />
-      <option name="METHOD_NAME" value="clickOnProductTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddToCartTest.numberOfProductOnThePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test_Automation_Final_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.DataTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.DataTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.AddToCartTest" />
-      <option name="METHOD_NAME" value="numberOfProductOnThePageTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationTest.registrationBasic" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test_Automation_Final_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.DataTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.DataTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.RegistrationTest" />
-      <option name="METHOD_NAME" value="registrationBasic" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="C:\Users\UltraBook\IdeaProjects\test_Automation_Final_Project\src\test\java\Tests\DataTests" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties>
+        <property name="param1" value="Primul Parametr" />
+        <property name="param2" value="1900" />
+      </properties>
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,19 +249,21 @@
     <list>
       <item itemvalue="Application.TestProj" />
       <item itemvalue="Maven.test_Automation_Final_Project" />
-      <item itemvalue="TestNG.AddToCartTest" />
-      <item itemvalue="TestNG.AddToCartTest.addToCartTest" />
-      <item itemvalue="TestNG.AddToCartTest.clickOnProductTest" />
-      <item itemvalue="TestNG.AddToCartTest.numberOfProductOnThePageTest" />
-      <item itemvalue="TestNG.RegistrationTest.registrationBasic" />
+      <item itemvalue="TestNG.RegressionSuite" />
+      <item itemvalue="TestNG.SmokeSuite" />
+      <item itemvalue="TestNG.C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/mainPageSmokeRunSuite.xml" />
+      <item itemvalue="TestNG.MainPageTest.clickOnShoppingCartTest" />
+      <item itemvalue="TestNG.CookieTest.addCookieTest" />
+      <item itemvalue="TestNG.CookieTest.cookieTest" />
+      <item itemvalue="TestNG.LoginTest.getAccountErrorsTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AddToCartTest.addToCartTest" />
-        <item itemvalue="TestNG.AddToCartTest.clickOnProductTest" />
-        <item itemvalue="TestNG.AddToCartTest.numberOfProductOnThePageTest" />
-        <item itemvalue="TestNG.AddToCartTest" />
-        <item itemvalue="TestNG.RegistrationTest.registrationBasic" />
+        <item itemvalue="TestNG.C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/mainPageSmokeRunSuite.xml" />
+        <item itemvalue="TestNG.MainPageTest.clickOnShoppingCartTest" />
+        <item itemvalue="TestNG.CookieTest.cookieTest" />
+        <item itemvalue="TestNG.LoginTest.getAccountErrorsTest" />
+        <item itemvalue="TestNG.CookieTest.addCookieTest" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675553008824</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update project 1.3">
+      <created>1675725177262</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675725177262</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,7 +362,8 @@
     <MESSAGE value="json file and xml file" />
     <MESSAGE value="update project" />
     <MESSAGE value="update project 1.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="update project 1.2" />
+    <MESSAGE value="update project 1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="update project 1.3" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

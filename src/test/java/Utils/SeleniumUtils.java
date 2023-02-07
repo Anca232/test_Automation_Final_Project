@@ -49,7 +49,7 @@ public class SeleniumUtils {
           Timestamp timestamp = new Timestamp(System.currentTimeMillis());
           System.out.println(timestamp.getTime());
           File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//          String filename = ConstantUtils.SCREENSHOT_FOLDER + "screenshot_" + timestamp.getTime() +  ".png";
+          String filename = ConstantUtils.SCREENSHOT_FOLDER + "screenshot_" + timestamp.getTime() +  ".png";
           try {
                FileUtils.copyFile(screenshotFile,
                        new File(ConstantUtils.SCREENSHOT_FOLDER + "screenshot_" + timestamp.getTime() + ".png"));

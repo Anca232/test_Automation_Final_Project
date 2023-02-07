@@ -9,6 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
+import java.util.Base64;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
