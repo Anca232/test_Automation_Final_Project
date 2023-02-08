@@ -9,8 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
-
-import java.util.Base64;
+import org.apache.commons.codec.binary.Base64;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
@@ -23,7 +22,7 @@ public class BaseTest {
      String baseUrl = GenericUtils.createBaseUrl(ConstantUtils.CONFIG_FILE);
 
      ExtentTest test;
-//     Base64 base64 = new Base64();
+     Base64 base64 = new Base64();
 
 
      @BeforeTest(alwaysRun = true)

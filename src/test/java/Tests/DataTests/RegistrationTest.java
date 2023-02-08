@@ -17,7 +17,6 @@ public class RegistrationTest extends BaseTest {
                   GenericUtils.createRandomString(10),
                   GenericUtils.createRandomString(10));
      }
-
      @Test
      public void registrationWithPredefinedNameTest(){
           driver.get(baseUrl + "/customer/account/create/");

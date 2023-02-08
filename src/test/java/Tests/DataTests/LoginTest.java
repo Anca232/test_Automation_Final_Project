@@ -6,6 +6,7 @@ import Tests.ObjectModels.LoginModel;
 import Utils.ExtentTestManager;
 import Utils.GenericUtils;
 import Utils.SeleniumUtils;
+import Utils.Tools;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,12 +20,13 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
 
-public class LoginTest extends BaseTest {
+public class  LoginTest extends BaseTest {
      @Test
      public void loginTest() {
           driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -88,5 +90,43 @@ public class LoginTest extends BaseTest {
 
           System.out.println("Expected Password Error:" + expectedPasswordError);
           Assert.assertTrue(LoginPage.checkErr(expectedPasswordError, "passErr"));
+     }
+
+     @DataProvider(name = "SQLdp")
+     public Iterator<Object[]> SQLDpCollection() {
+          //        get DB connection settings
+          System.out.println("Use dbHostname:" + dbHostname);
+          System.out.println("Use dbUser:" + dbUser);
+          System.out.println("Use dbPort:" + dbPort);
+          System.out.println("Use dbPassword:" + dbPassword);
+          System.out.println("Use dbSchema:" + dbSchema);
+
+          Collection<Object[]> dp = new ArrayList<>();
+          try {
+               Connection connection = DriverManager.getConnection("jdbc:mysql://" + dbHostname + ":" + dbPort
+                       + "/" + dbSchema, dbUser, new String(base64.decode(dbPassword.getBytes())));
+               Statement statement = connection.createStatement();
+               ResultSet resultSet = statement.executeQuery("SELECT * FROM login_negativ");
+               while (resultSet.next()) {
+                    LoginModel lm = new LoginModel(getEscapedElement(resultSet, "username"),
+                            getEscapedElement(resultSet, "password"),
+                            getEscapedElement(resultSet, "usernameErr"),
+                            getEscapedElement(resultSet, "passErr"));
+                    dp.add(new Object[]{lm});
+               }
+          } catch (SQLException ex) {
+               ex.printStackTrace();
+          }
+          return dp.iterator();
+     }
+
+     private String getEscapedElement(ResultSet resultSet, String element) throws SQLException {
+          return Tools.replaceElements(resultSet.getString(element), "''", "");
+     }
+
+     @Test(dataProvider = "SQLdp")
+     public void loginWithDBTest(LoginModel lm) {
+          printData(lm);
+          loginActions(lm);
      }
 }
