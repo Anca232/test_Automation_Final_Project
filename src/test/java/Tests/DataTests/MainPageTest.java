@@ -8,8 +8,9 @@ import java.lang.reflect.Method;
 
 public class MainPageTest extends BaseTest {
 
-     @Test(groups = {"Regression"})
-     public void clickOnSearchBarTest(){
+     @Test(groups = {"Smoke"})
+     public void clickOnSearchBarTest(Method method){
+          ExtentTestManager.startTest(method.getName(), "");
           driver.get(baseUrl);
           MainPage mp = new MainPage(driver);
           mp.clickOnAlertButton();
@@ -18,7 +19,7 @@ public class MainPageTest extends BaseTest {
      }
 
      @Test(groups = {"Regression"})
-     public void clickOnShoppingCartTest(String param1, String param2){
+     public void clickOnShoppingCartTest(){
           driver.get(baseUrl);
           MainPage mp = new MainPage(driver);
           mp.goToShoppingCartPage();

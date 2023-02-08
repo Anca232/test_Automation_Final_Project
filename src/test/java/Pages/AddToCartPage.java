@@ -43,6 +43,7 @@ public class AddToCartPage extends BasePage {
      }
      public void clickOnTheNumberProductDropDown(){
           WebElement noOfProduct = driver.findElement(By.xpath(dropDownNumberOfProductOnThePageSelector));
+          noOfProduct.click();
      }
 
 }

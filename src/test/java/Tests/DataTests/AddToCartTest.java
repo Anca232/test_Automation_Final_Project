@@ -36,6 +36,6 @@ public class AddToCartTest extends BaseTest {
      public void addToCartTest(){
           driver.get(baseUrl + "/ceas-stihl-timbersports-negru.html/");
           AddToCartProductPage atc = new AddToCartProductPage(driver);
-          atc.verifyPage();
+          atc.addToCartProduct();
      }
 }

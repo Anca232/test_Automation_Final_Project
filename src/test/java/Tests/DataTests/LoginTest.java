@@ -19,7 +19,6 @@ public class LoginTest extends BaseTest {
      public void loginTest() {
           driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
           driver.get(baseUrl + "/customer/account/login/");
-          driver.manage().deleteAllCookies();
           LoginPage lp = new LoginPage(driver);
           lp.verifyPage();
           lp.login("tested@hotmail.com", "Parola4321");

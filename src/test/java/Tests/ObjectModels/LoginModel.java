@@ -7,7 +7,6 @@ public class LoginModel {
 
      public LoginModel(){
      }
-
      public MyAccountModel getAccount() {
           return account;
      }
