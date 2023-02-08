@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce7c32ec-aa8f-4596-8514-88f6a9e66d3a" name="Changes" comment="update project 1.5">
+    <list default="true" id="ce7c32ec-aa8f-4596-8514-88f6a9e66d3a" name="Changes" comment="update project 1.6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AddToCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AddToCartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CheckError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/AddToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/AddToCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Resources/Data/testdata.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/Data/testdata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IgnoreThemPracticeTests/JUnitProjectTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IgnoreThemPracticeTests/TestNGProjectTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/MainPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/MyAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/MyAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ObjectModels/LoginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ObjectModels/LoginModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ObjectModels/MyAccountModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ObjectModels/MyAccountModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/GenericUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/GenericUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +74,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MyAccountTest.myAccountTest">
+  <component name="RunManager" selected="TestNG.RegistrationTest.registrationWithPredefinedNameTest">
     <configuration name="TestProj" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.finalProjectTest.TestProject" />
       <module name="test_Automation_Final_Project" />
@@ -99,7 +106,7 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.getAccountErrorsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_Automation_Final_Project" />
       <extension name="coverage">
         <pattern>
@@ -109,41 +116,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests.DataTests" />
       <option name="MAIN_CLASS_NAME" value="Tests.DataTests.LoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test_Automation_Final_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.DataTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.DataTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.MyAccountTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyAccountTest.myAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test_Automation_Final_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.DataTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.DataTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.MyAccountTest" />
-      <option name="METHOD_NAME" value="myAccountTest" />
+      <option name="METHOD_NAME" value="getAccountErrorsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -151,7 +124,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test_Automation_Final_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.DataTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.DataTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.LoginTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.loginWithJsonTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test_Automation_Final_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.DataTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.DataTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.LoginTest" />
+      <option name="METHOD_NAME" value="loginWithJsonTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTest.registrationWithPredefinedNameTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_Automation_Final_Project" />
       <extension name="coverage">
         <pattern>
@@ -161,7 +170,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests.DataTests" />
       <option name="MAIN_CLASS_NAME" value="Tests.DataTests.RegistrationTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="registrationWithPredefinedNameTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -232,19 +242,19 @@
       <item itemvalue="Maven.test_Automation_Final_Project" />
       <item itemvalue="TestNG.RegressionSuite" />
       <item itemvalue="TestNG.SmokeSuite" />
-      <item itemvalue="TestNG.LoginTest" />
-      <item itemvalue="TestNG.MyAccountTest" />
-      <item itemvalue="TestNG.MyAccountTest.myAccountTest" />
-      <item itemvalue="TestNG.RegistrationTest" />
+      <item itemvalue="TestNG.LoginTest.loginTest" />
+      <item itemvalue="TestNG.LoginTest.loginWithJsonTest" />
+      <item itemvalue="TestNG.RegistrationTest.registrationWithPredefinedNameTest" />
       <item itemvalue="TestNG.Tests.DataTests" />
+      <item itemvalue="TestNG.LoginTest.getAccountErrorsTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MyAccountTest.myAccountTest" />
+        <item itemvalue="TestNG.RegistrationTest.registrationWithPredefinedNameTest" />
         <item itemvalue="TestNG.Tests.DataTests" />
-        <item itemvalue="TestNG.RegistrationTest" />
-        <item itemvalue="TestNG.MyAccountTest" />
-        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.LoginTest.loginWithJsonTest" />
+        <item itemvalue="TestNG.LoginTest.getAccountErrorsTest" />
+        <item itemvalue="TestNG.LoginTest.loginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -334,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675811597199</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update project 1.6">
+      <created>1675879396563</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1675879396563</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -360,7 +377,8 @@
     <MESSAGE value="update project 1.3" />
     <MESSAGE value="update project 1.4" />
     <MESSAGE value="update project 1.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="update project 1.5" />
+    <MESSAGE value="update project 1.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="update project 1.6" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

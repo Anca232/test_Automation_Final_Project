@@ -29,7 +29,6 @@ public class BaseTest {
      @BeforeTest(alwaysRun = true)
      public void beforeTest() {
           setUpDriver();
-//          driver.manage().deleteAllCookies();
      }
      @BeforeClass
      public void beforeClass(){

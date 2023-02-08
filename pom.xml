@@ -76,7 +76,7 @@
             <artifactId>webdrivermanager</artifactId>
             <version>${webdriverManagerVersion}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <!-- json data reader -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>

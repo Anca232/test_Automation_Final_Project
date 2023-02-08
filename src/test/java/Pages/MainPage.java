@@ -63,8 +63,4 @@ public class MainPage extends BasePage {
 //     public void goToModal(){
 //          driver.findElement(By.cssSelector(modalUrlSelector)).click();
 //     }
-//
-//     public String getWelcomeText() {
-//          return driver.findElement(By.cssSelector(welcomeTextSelector)).getText();
-//     }
 }

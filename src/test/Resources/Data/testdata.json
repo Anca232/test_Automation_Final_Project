@@ -1,26 +1,26 @@
 [
   {
     "account": {
-      "email": "test2@yahoo.com",
+      "email": "tested@hotmail.com",
       "password": ""
-    }
+    },
+    "emailError": "",
+    "passwordError": "Acesta este un camp obligatoriu."
   },
   {
     "account": {
       "email": "",
-      "password": "gsrYbWyvui.6dmX"
-    }
+      "password": "test"
+    },
+    "emailError": "Acesta este un camp obligatoriu.",
+    "passwordError": ""
   },
   {
     "account": {
       "email": "",
       "password": ""
-    }
-  },
-  {
-    "account": {
-      "email": "test2@yahoo.com",
-      "password": "gsrYbWyvui.6dmX"
-    }
+    },
+    "emailError": "Acesta este un camp obligatoriu.",
+    "passwordError": "Acesta este un camp obligatoriu."
   }
 ]

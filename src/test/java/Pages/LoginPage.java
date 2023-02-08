@@ -5,15 +5,16 @@ import Utils.SeleniumUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.awt.*;
 import java.util.List;
 
 public class LoginPage extends BasePage {
-
-
      WebDriverWait wait;
+     static WebDriver driver;
      private MyAccountModel account;
 
      private String titlePageSelector = "#maincontent > div.columns > div > div.sociallogin-wrapper.block-customer-login > div > div.block-title > h3";
@@ -21,13 +22,17 @@ public class LoginPage extends BasePage {
      private String passwordInputSelector = "#pass"; //css
      private String forgetPasswordSelector = "#login-form > fieldset > div.actions-toolbar > div.secondary > a > span"; //css
      private String submitButtonSelector = "#send2 > span"; //css
-     private String emailError = "//*[@id=\"email-error\"]";
-     private String passwordError = "//*[@id=\"pass-error\"]";
+     private static String emailError = "//*[@id=\"email-error\"]";
+     private static String passwordError = "//*[@id=\"pass-error\"]";
      private String byClassName = "input-text";
+//     private static Label emailErr;
+//     private static Label passwordErr;
 
 
      public LoginPage(WebDriver driver) {
-          super(driver);
+          LoginPage.driver = driver;
+          wait = new WebDriverWait(driver, 10);
+          PageFactory.initElements(driver, this);
      }
 
      public void verifyPage(){
@@ -50,9 +55,7 @@ public class LoginPage extends BasePage {
      }
 
      public void getLoginError() {
-          WebElement submitButtonInput = driver.findElement(By.cssSelector(submitButtonSelector));
-          submitButtonInput.submit();
-//          WebDriverWait wait = new WebDriverWait(driver, 10);
+          driver.findElement(By.cssSelector(submitButtonSelector)).click();
 
           WebElement emailErr = SeleniumUtils.waitForGenericElement(driver, By.xpath(emailError), 10);
           Assert.assertEquals(emailErr.getText(),"Acesta este un camp obligatoriu.");
@@ -61,27 +64,26 @@ public class LoginPage extends BasePage {
           WebElement passwordErr = SeleniumUtils.waitForGenericElement(driver, By.xpath(passwordError), 10);
           Assert.assertEquals(passwordErr.getText(), "Acesta este un camp obligatoriu.");
           System.out.println(passwordErr.isDisplayed());
-
      }
-//     public String getPasswordError() {
-//          driver.findElement(By.cssSelector(submitButtonSelector)).submit();
-//          WebElement emailErr = SeleniumUtils.waitForGenericElement(driver, By.xpath(emailError), 10);
-//          return driver.findElement(By.xpath(String.valueOf(emailErr))).getText();
-//     }
 
-//     @Override
-//     public String toString() {
-//          return "LoginModel{" +
-//                  "account=" + account +
-//                  '}';
-//     }
+     public static boolean checkErr(String expectedErr, String errorType) {
+          WebElement emailErr = SeleniumUtils.waitForGenericElement(driver, By.xpath(emailError), 10);
+          Assert.assertEquals(emailErr.getText(),"Acesta este un camp obligatoriu.");
 
-//     public void clickOnAlertButton(){
-//          WebElement cookieButton = driver.findElement(By.cssSelector(alertButtonSelector));
-//          cookieButton.click();
-//     }
+          WebElement passwordErr = SeleniumUtils.waitForGenericElement(driver, By.xpath(passwordError), 10);
+          Assert.assertEquals(passwordErr.getText(), "Acesta este un camp obligatoriu.");
 
-//     public String getEmailError(){
-//          return driver.findElement(By.id(emailError)).getText();
-//     }
+          if (errorType.equalsIgnoreCase("userErr")) {
+               if (expectedErr.length() > 0) {
+                    System.out.println("Actual user error:" + emailErr.getText());
+                    return expectedErr.equals(emailErr.getText());
+               } else return true;
+          } else if (errorType.equalsIgnoreCase("passErr")) {
+               if (expectedErr.length() > 0) {
+                    System.out.println("Actual pass error:" + passwordErr.getText());
+                    return expectedErr.equalsIgnoreCase(passwordErr.getText());
+               } else return true;
+          }
+          return true;
+     }
 }

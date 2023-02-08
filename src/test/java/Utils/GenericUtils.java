@@ -69,10 +69,6 @@ public class GenericUtils {
           return ConfigUtils.getGenericValue(configFile, "dbSchema", "");
      }
 
-     public static String getapiVersion(String configFile){
-          return ConfigUtils.getGenericValue(configFile, "apiVersion", "");
-     }
-
      public static boolean isDownloadDirectoryEnabled(String configFile) {
           return Boolean.parseBoolean(ConfigUtils.getGenericValue(configFile, "downloadDirectoryEnabled", "false"));
      }
