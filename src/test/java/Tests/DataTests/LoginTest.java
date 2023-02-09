@@ -27,8 +27,9 @@ import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
 
 public class  LoginTest extends BaseTest {
-     @Test
-     public void loginTest() {
+     @Test(groups = {"Smoke", "Regression"})
+     public void loginTest(Method method) {
+          ExtentTestManager.startTest(method.getName(), "");
           driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
           driver.get(baseUrl + "/customer/account/login/");
           LoginPage lp = new LoginPage(driver);
@@ -38,8 +39,9 @@ public class  LoginTest extends BaseTest {
           acp.verifyPage();
      }
 
-     @Test
-     public void getAccountErrorsTest() {
+     @Test(groups = {"Smoke"})
+     public void getAccountErrorsTest(Method method) {
+          ExtentTestManager.startTest(method.getName(), "");
           driver.get(baseUrl + "/customer/account/login/");
           LoginPage lp = new LoginPage(driver);
           lp.getLoginError();
@@ -126,7 +128,7 @@ public class  LoginTest extends BaseTest {
 
      @Test(dataProvider = "SQLdp")
      public void loginWithDBTest(LoginModel lm) {
-          printData(lm);
+//          printData(lm);
           loginActions(lm);
      }
 }

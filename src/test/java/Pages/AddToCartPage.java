@@ -39,7 +39,9 @@ public class AddToCartPage extends BasePage {
      }
      public void clickOnTheProduct(){
           WebElement hoverOption = driver.findElement(By.xpath(firstProductInTheListSelector));
-          hoverOption.click();
+//          hoverOption.click();
+          Actions actions = new Actions(driver);
+          actions.moveToElement(hoverOption).click().build().perform();
      }
      public void clickOnTheNumberProductDropDown(){
           WebElement noOfProduct = driver.findElement(By.xpath(dropDownNumberOfProductOnThePageSelector));

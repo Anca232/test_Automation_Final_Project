@@ -5,6 +5,7 @@ import Utils.SeleniumUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -58,11 +59,14 @@ public class LoginPage extends BasePage {
           driver.findElement(By.cssSelector(submitButtonSelector)).click();
 
           WebElement emailErr = SeleniumUtils.waitForGenericElement(driver, By.xpath(emailError), 10);
+          Actions actions = new Actions(driver);
+          actions.moveToElement(emailErr).build().perform();
           Assert.assertEquals(emailErr.getText(),"Acesta este un camp obligatoriu.");
           System.out.println(emailErr.isDisplayed());
 
           WebElement passwordErr = SeleniumUtils.waitForGenericElement(driver, By.xpath(passwordError), 10);
           Assert.assertEquals(passwordErr.getText(), "Acesta este un camp obligatoriu.");
+          actions.moveToElement(passwordErr).build().perform();
           System.out.println(passwordErr.isDisplayed());
      }
 

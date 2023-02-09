@@ -3,6 +3,7 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 public class RegistrationPage extends BasePage {
@@ -33,7 +34,7 @@ public class RegistrationPage extends BasePage {
           WebElement emailAddressInput = driver.findElement(By.id(emailAddressInputSelector));
           WebElement passwordInput = driver.findElement(By.id(passwordInputSelector));
           WebElement confirmPasswordInput = driver.findElement(By.id(confirmPasswordSelector));
-          WebElement policyClick = driver.findElement(By.cssSelector(policyCLickSelector));
+          WebElement policyClickBox = driver.findElement(By.cssSelector(policyCLickSelector));
           WebElement submitAccountInput = driver.findElement(By.cssSelector(submitAccountButton));
 
           firstNameInput.clear();
@@ -46,7 +47,12 @@ public class RegistrationPage extends BasePage {
           passwordInput.sendKeys(password);
           confirmPasswordInput.clear();
           confirmPasswordInput.sendKeys(confirmPassword);
-          policyClick.click();
+
+          Actions actions = new Actions(driver);
+          actions.moveToElement(policyClickBox).click().build().perform();
+
           submitAccountInput.submit();
+
+
      }
 }

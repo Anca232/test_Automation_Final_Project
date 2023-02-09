@@ -1,7 +1,5 @@
 package Tests.ObjectModels;
 
-
-
 public class LoginModel {
      private MyAccountModel account;
      private String emailError;

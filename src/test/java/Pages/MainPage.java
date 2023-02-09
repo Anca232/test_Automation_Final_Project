@@ -13,7 +13,7 @@ public class MainPage extends BasePage {
 
      private String mainPageLogo = "//*[@id=\"html-body\"]/div[3]/header/div[2]/strong/img "; //css
      private String searchProductSelector = "//*[@id=\"search\"]"; //xpath
-     private String hoverFirstMenuOptionSelector = "#html-body > div.page-wrapper > header > div.header.content > nav > ul > li:nth-child(1)"; //css
+
      private String myAccountOptionSelector = "#idAZqmoaHI"; //css
      private String hoverIconSelector = "//*[@id=\"html-body\"]/div[3]/header/div[2]/ul/button/a/img"; //xpath
      private String shoppingCartSelector = "#minicart > a";
@@ -55,12 +55,4 @@ public class MainPage extends BasePage {
           actions.moveToElement(hoverOption).build().perform();
           driver.findElement(By.xpath(loginButtonSelector)).click();
      }
-
-//     public void gotToInterceptor(){
-//          driver.findElement(By.cssSelector(interceptorUrlSelector)).click();
-//     }
-//
-//     public void goToModal(){
-//          driver.findElement(By.cssSelector(modalUrlSelector)).click();
-//     }
 }

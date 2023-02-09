@@ -3,6 +3,7 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 public class AddToCartProductPage extends BasePage {
@@ -28,7 +29,10 @@ public class AddToCartProductPage extends BasePage {
      }
      public void addToCartProduct(){
           WebElement addToCartButton = driver.findElement(By.xpath(addToCartButtonSelector));
-          addToCartButton.click();
+//          addToCartButton.click();
+          Actions actions = new Actions(driver);
+          actions.moveToElement(addToCartButton).click().build().perform();
+
      }
 
 }

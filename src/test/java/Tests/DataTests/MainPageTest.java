@@ -18,8 +18,9 @@ public class MainPageTest extends BaseTest {
           mp.clickOnSearchButton();
      }
 
-     @Test(groups = {"Regression"})
-     public void clickOnShoppingCartTest(){
+     @Test(groups = {"Smoke"})
+     public void clickOnShoppingCartTest(Method method){
+          ExtentTestManager.startTest(method.getName(), "");
           driver.get(baseUrl);
           MainPage mp = new MainPage(driver);
           mp.goToShoppingCartPage();
