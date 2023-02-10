@@ -1,6 +1,5 @@
 package Pages;
 
-import Utils.SeleniumUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -39,7 +38,6 @@ public class AddToCartPage extends BasePage {
      }
      public void clickOnTheProduct(){
           WebElement hoverOption = driver.findElement(By.xpath(firstProductInTheListSelector));
-//          hoverOption.click();
           Actions actions = new Actions(driver);
           actions.moveToElement(hoverOption).click().build().perform();
      }

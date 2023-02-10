@@ -4,7 +4,6 @@ import Utils.SeleniumUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
@@ -20,7 +19,6 @@ public class MainPage extends BasePage {
      private String searchButtonSelector = "//*[@id=\"algolia-glass\"]"; //xpath
      private String loginButtonSelector = "//*[@id=\"html-body\"]/div[3]/header/div[2]/ul/div/ul/li[1]/a"; //xpath
      private String alertButtonSelector = "#html-body > div.amgdprcookie-bar-template > div > div > p"; //css
-     private String shoppingBagLabel = "#minicart-content-wrapper > div.block-title > strong > span.text > span";
 
      public MainPage(WebDriver driver) {
           super(driver);
@@ -48,7 +46,6 @@ public class MainPage extends BasePage {
      }
 
      public void clickOnSignIn(){
-//          WebElement hoverOption = driver.findElement(By.cssSelector(accountIconSelector));
           WebElement hoverOption = SeleniumUtils.waitForGenericElement(driver, By.xpath(hoverIconSelector), 10);
           hoverOption.click();
           Actions actions = new Actions(driver);

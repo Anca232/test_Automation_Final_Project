@@ -14,11 +14,10 @@ public class MyAccountTest extends BaseTest {
           ExtentTestManager.startTest(method.getName(), "");
           driver.get(baseUrl + "/customer/account/");
           LoginPage lp = new LoginPage(driver);
-          lp.verifyPage();
           lp.login("tibi.pop@gmail.com", "Pass1234!");
 
-
           MyAccountPage map = new MyAccountPage(driver);
+          map.verifyPage();
           map.changePass();
      }
 }

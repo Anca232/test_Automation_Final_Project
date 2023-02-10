@@ -13,7 +13,7 @@ public class AddToCartTest extends BaseTest {
           acp.verifyAddToCartPage();
      }
 
-     @Test(priority = 1)
+     @Test (priority = 1)
      public void orderProductsDropdownTest(){
           driver.get(baseUrl + "/gift-ideas.html/");
           AddToCartPage acp = new AddToCartPage(driver);

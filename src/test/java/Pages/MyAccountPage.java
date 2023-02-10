@@ -2,6 +2,8 @@ package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 public class MyAccountPage extends BasePage {
@@ -37,7 +39,9 @@ public class MyAccountPage extends BasePage {
      }
 
      public void changePass(){
-          driver.findElement(By.xpath(changePasswordSelector)).click();
+          WebElement changePassword = driver.findElement(By.xpath(changePasswordSelector));
+          Actions actions = new Actions(driver);
+          actions.moveToElement(changePassword).click().build().perform();
      }
 }
 

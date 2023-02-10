@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 
 public class BrowserUtils {
 
-     public static WebDriver getBrowser(String browser, String configFile){  //browser factory classic method
+     public static WebDriver getBrowser(String browser, String configFile){
           switch (browser.toLowerCase()) {
                case ("chrome") -> {
                     WebDriverManager.chromedriver().setup();
@@ -34,7 +34,6 @@ public class BrowserUtils {
                          options.setProxy(proxy);
                     }
 
-                    // Setting a fixed download directory
                     if(GenericUtils.isDownloadDirectoryEnabled(ConstantUtils.CONFIG_FILE)) {
                          Map<String, Object> preferences = new HashMap<>();
                          preferences.put("download.default_directory", ConstantUtils.DOWNLOAD_DIRECTORY);
@@ -42,7 +41,6 @@ public class BrowserUtils {
                     }
 
                     if(GenericUtils.startMaximized(ConstantUtils.CONFIG_FILE)) {
-                         // Start the browser maximized
                          options.addArguments("--start-maximized");
                     }
 
@@ -85,7 +83,7 @@ public class BrowserUtils {
           }
      }
 
-     public static Browser getBrowser(BrowserTypes browserType) { //second method browser factory
+     public static Browser getBrowser(BrowserTypes browserType) {
           switch(browserType.toString()) {
                case ("CHROME") : {
                     return new ChromeBrowser();
@@ -103,10 +101,8 @@ public class BrowserUtils {
           }
      }
 
-     public static String getBrowserExternal(String propertyName) { //get browser from env variables (exterior)
-          // Take all the system environment names and values
+     public static String getBrowserExternal(String propertyName) {
           Map<String, String> env = System.getenv();
-          // Check if the property is set
           if (env.containsKey(propertyName)) {
                System.out.println("Running from ENV variable with browser: " + System.getenv(propertyName));
                return System.getenv(propertyName).toLowerCase();

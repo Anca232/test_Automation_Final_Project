@@ -4,15 +4,8 @@ import Pages.AccountOptionsPage;
 import Pages.LoginPage;
 import Tests.ObjectModels.LoginModel;
 import Utils.ExtentTestManager;
-import Utils.GenericUtils;
-import Utils.SeleniumUtils;
 import Utils.Tools;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -128,7 +121,7 @@ public class  LoginTest extends BaseTest {
 
      @Test(dataProvider = "SQLdp")
      public void loginWithDBTest(LoginModel lm) {
-//          printData(lm);
+          printData(lm);
           loginActions(lm);
      }
 }

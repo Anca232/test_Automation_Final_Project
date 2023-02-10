@@ -4,19 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce7c32ec-aa8f-4596-8514-88f6a9e66d3a" name="Changes" comment="update project 1.7 - run with sql db">
+    <list default="true" id="ce7c32ec-aa8f-4596-8514-88f6a9e66d3a" name="Changes" comment="update project 1.8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addToCartRegressionRunSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RegressionSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainPageSmokeRunSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SmokeSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegressionSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/regressionSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmokeSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smokeSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myFirstSuiteRun.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AddToCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AddToCartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AddToCartProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AddToCartProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/MyAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/AddToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/AddToCartTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/MainPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/MyAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/MyAccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataTests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataTests/RegistrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ObjectModels/LoginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ObjectModels/LoginModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +74,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/SmokeSuite.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/smokeSuite.xml">
     <configuration name="TestProj" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.finalProjectTest.TestProject" />
       <module name="test_Automation_Final_Project" />
@@ -82,7 +83,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_Automation_Final_Project" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+    <configuration name="test_Automation_Final_Project [compile]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -92,7 +93,9 @@
               <set />
             </option>
             <option name="goals">
-              <list />
+              <list>
+                <option value="compile" />
+              </list>
             </option>
             <option name="pomFileName" />
             <option name="profilesMap">
@@ -105,28 +108,27 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/RegressionSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AddToCartTest.addToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_Automation_Final_Project" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/RegressionSuite.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.DataTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.DataTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.AddToCartTest" />
+      <option name="METHOD_NAME" value="addToCartTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/SmokeSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/regressionSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_Automation_Final_Project" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/SmokeSuite.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/regressionSuite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -134,10 +136,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/addToCartRegressionRunSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/smokeSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_Automation_Final_Project" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/addToCartRegressionRunSuite.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/smokeSuite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test_Automation_Final_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.DataTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.DataTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.MyAccountTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -156,23 +175,6 @@
       <option name="MAIN_CLASS_NAME" value="Tests.DataTests.MyAccountTest" />
       <option name="METHOD_NAME" value="myAccountTest" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test_Automation_Final_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.DataTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.DataTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.RegistrationTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -225,22 +227,22 @@
     </configuration>
     <list>
       <item itemvalue="Application.TestProj" />
-      <item itemvalue="Maven.test_Automation_Final_Project" />
+      <item itemvalue="Maven.test_Automation_Final_Project [compile]" />
       <item itemvalue="TestNG.RegressionSuite" />
       <item itemvalue="TestNG.SmokeSuite" />
-      <item itemvalue="TestNG.C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/RegressionSuite.xml" />
-      <item itemvalue="TestNG.C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/SmokeSuite.xml" />
-      <item itemvalue="TestNG.C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/addToCartRegressionRunSuite.xml" />
+      <item itemvalue="TestNG.AddToCartTest.addToCartTest" />
+      <item itemvalue="TestNG.C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/regressionSuite.xml" />
+      <item itemvalue="TestNG.C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/smokeSuite.xml" />
+      <item itemvalue="TestNG.MyAccountTest" />
       <item itemvalue="TestNG.MyAccountTest.myAccountTest" />
-      <item itemvalue="TestNG.RegistrationTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/SmokeSuite.xml" />
-        <item itemvalue="TestNG.C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/RegressionSuite.xml" />
-        <item itemvalue="TestNG.RegistrationTest" />
+        <item itemvalue="TestNG.C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/smokeSuite.xml" />
+        <item itemvalue="TestNG.C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/regressionSuite.xml" />
+        <item itemvalue="TestNG.AddToCartTest.addToCartTest" />
         <item itemvalue="TestNG.MyAccountTest.myAccountTest" />
-        <item itemvalue="TestNG.C:/Users/UltraBook/IdeaProjects/test_Automation_Final_Project/addToCartRegressionRunSuite.xml" />
+        <item itemvalue="TestNG.MyAccountTest" />
       </list>
     </recent_temporary>
   </component>
@@ -351,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675893063400</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update project 1.8">
+      <created>1675979848137</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1675979848137</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -380,7 +389,8 @@
     <MESSAGE value="update project 1.6" />
     <MESSAGE value="update project 1.7 - run with json db" />
     <MESSAGE value="update project 1.7 - run with sql db" />
-    <option name="LAST_COMMIT_MESSAGE" value="update project 1.7 - run with sql db" />
+    <MESSAGE value="update project 1.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="update project 1.8" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

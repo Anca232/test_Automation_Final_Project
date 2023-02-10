@@ -10,13 +10,11 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import java.awt.*;
 import java.util.List;
 
 public class LoginPage extends BasePage {
      WebDriverWait wait;
      static WebDriver driver;
-     private MyAccountModel account;
 
      private String titlePageSelector = "#maincontent > div.columns > div > div.sociallogin-wrapper.block-customer-login > div > div.block-title > h3";
      private String emailInputSelector = "#email"; //css
@@ -25,9 +23,7 @@ public class LoginPage extends BasePage {
      private String submitButtonSelector = "#send2 > span"; //css
      private static String emailError = "//*[@id=\"email-error\"]";
      private static String passwordError = "//*[@id=\"pass-error\"]";
-     private String byClassName = "input-text";
-//     private static Label emailErr;
-//     private static Label passwordErr;
+     private String byClassName = "input-text";;
 
 
      public LoginPage(WebDriver driver) {
