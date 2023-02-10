@@ -11,8 +11,8 @@
             </run>
         </groups>
         <classes>
-            <class name="Tests.DataTests.MyAccountTest"/>
             <class name="Tests.DataTests.RegistrationTest"/>
+            <class name="Tests.DataTests.MyAccountTest"/>
         </classes>
     </test>
 </suite>
